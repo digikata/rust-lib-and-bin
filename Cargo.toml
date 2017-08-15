@@ -1,0 +1,15 @@
+[package]
+name = "lib-and-bin"
+version = "0.1.0"
+authors = ["Alan C <digikata@gmail.com>"]
+
+[dependencies]
+
+
+[lib]
+name = "mylib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mybin"
+path = "src/bin.rs"
