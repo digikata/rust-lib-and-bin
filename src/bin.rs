@@ -10,6 +10,7 @@ pub fn main() {
 
   mod0::bfunc();
   mod1::afunc();
+  mod2::foofoo();
   // mod2::bar::bar(); // error: module bar is private
   mod2::barr();
 }
