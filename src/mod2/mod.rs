@@ -5,7 +5,7 @@ mod bar;
 mod foo;
 
 // 
-pub use mod2::bar::bar as barr;
+pub use bar::bar as barr;
 
 
 pub fn foofoo() {

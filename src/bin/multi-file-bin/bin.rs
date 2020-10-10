@@ -1,9 +1,8 @@
-extern crate mylib;
 
-use mylib::test;
-use mylib::mod0;
-use mylib::mod1;
-use mylib::mod2;
+use thelib::test;
+use thelib::mod0;
+use thelib::mod1;
+use thelib::mod2;
 
 // module referenced from the binary package
 mod bmod;
@@ -11,7 +10,7 @@ mod bmod;
 pub fn main() {
   let verstr =env!("CARGO_PKG_VERSION");
   println!("Version {}", verstr);
-  
+
   test();
 
   mod0::bfunc();

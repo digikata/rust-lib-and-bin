@@ -1,15 +1,16 @@
 [package]
-name = "lib-and-bin"
-version = "0.1.0"
-authors = ["Alan C <digikata@gmail.com>"]
-
-[dependencies]
-
+name = "rust_lib_and_bin"
+version = "0.2.0"
+authors = ["Alan C <argot@digikata.com>"]
+edition = "2018"
 
 [lib]
-name = "mylib"
+name = "thelib"
 path = "src/lib.rs"
 
+
 [[bin]]
-name = "mybin"
-path = "src/bin.rs"
+name = "mfbin"
+path = "src/bin/multi-file-bin/bin.rs"
+
+[dependencies]
