@@ -1,4 +1,7 @@
 # rust-lib-and-bin
+
+![Rust build badge](https://github.com/digikata/rust-lib-and-bin/workflows/Rust/badge.svg)
+
 Simple rust project the builds a library and binary
 includes some reference project setup patterns including:
 - various module imports
