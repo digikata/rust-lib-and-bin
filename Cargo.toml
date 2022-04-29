@@ -1,16 +1,19 @@
 [package]
 name = "rust_lib_and_bin"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Alan C <argot@digikata.com>"]
-edition = "2018"
+edition = "2021"
 
 [lib]
 name = "thelib"
-path = "src/lib.rs"
+path = "src/lib/lib.rs"
 
 
+# leaving bin.rs and bmod.rs in src/bin makes
+# cargo treat the files as if bin.rs and bmod.rs
+# as individual binaries.
 [[bin]]
 name = "mfbin"
-path = "src/bin/multi-file-bin/bin.rs"
+path = "src/bin/multi-file/bin.rs"
 
 [dependencies]

@@ -10,7 +10,7 @@ mod bmod;
 pub fn main() {
   let verstr =env!("CARGO_PKG_VERSION");
   println!("Version {}", verstr);
-
+  println!("foo: {}", foo());
   test();
 
   mod0::bfunc();
@@ -20,4 +20,20 @@ pub fn main() {
   mod2::barr();
 
   bmod::bmod_func();
+}
+
+fn foo() -> usize {
+    return 1;
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_foo() -> Result<(), String> {
+        let x = 1usize;
+        assert_eq!(x, foo());
+        Ok(())
+    }
 }
